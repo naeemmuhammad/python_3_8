@@ -17,7 +17,7 @@ RUN apt-get -qq -y update && \
     rm -rf /var/lib/apt-get/lists/*
 
 
-RUN pip install  numpy==1.23.1  scipy==1.9.0  h5py==3.7.0 matplotlib===3.5.2
+RUN pip install  numpy==1.23.1  scipy==1.9.0  h5py==3.7.0 matplotlib===3.5.2 openpyxl==3.0.10 pandas==1.5.1
 
 # Create user "docker" with sudo powers
 RUN useradd -m docker && \
