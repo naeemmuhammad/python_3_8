@@ -16,7 +16,7 @@ if [ ! "${container_id}" ]; then
   echo "Container doesn't exist, so create a container."
 fi
 unset container_id
-docker container rm -f ${CONTAINER_NAME}
+#docker container rm -f ${CONTAINER_NAME}
 
 docker run -di --name ${CONTAINER_NAME} -v /${BASE_DIR}/shared:/home/docker/scripts ${IMAGE_NAME}
-winpty docker exec -w //home//docker//scripts -it ${CONTAINER_NAME} //bin//bash
+docker exec -w //home//docker//scripts -it ${CONTAINER_NAME} //bin//bash
