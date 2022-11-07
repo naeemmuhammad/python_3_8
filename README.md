@@ -12,8 +12,8 @@ Executing this bash script will create a Linux virtual machine, establish SSH co
 
 ## Getting started
 
-Simply execute the following command on your terminal: 
-
+1. [Install Docker](https://docs.docker.com/desktop/).
+2. Execute the following command on your terminal: 
 
 ```
 bash reproduce.sh
